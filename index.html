@@ -16,54 +16,74 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="navbar">
-            <a href="#" class="logo">Azeez.</a>
+    <div class="wrapper">
+        <div class="container">
+            <header class="navbar">
+                <a href="#" class="logo">Azeez.</a>
 
-            <nav class="home">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+                <nav class="home" id="home">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
 
-    <section class="content">
-        <div class="profile">
-            <h1>Hi, I'm Tiamiyu Azeez</h1>
-            <h3>Full-stack Developer</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-            <div class="btn-box">
-                <a href="#">Hire me</a>
-                <a href="#">Let's talk</a>
-            </div>
+                <div class="menu" id="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="box" width="40" height="40" viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1);">
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                    </svg>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="profile">
+                    <h1>Hi, I'm Tiamiyu Azeez</h1>
+                    <h3>Full-stack Developer</h3>
+                    <p>
+                        I am is a highly skilled professional with a strong background
+                        in Front end and backend web-development. With expertise in this field,
+                        I have worked across multiple industries, including Fashion, Fin-tech, E-commerce.
+                        Known for successfully completing notable projects,
+                        I have a proven track record of delivering exceptional
+                        results. My skill set includes HTML/CSS, Javascript, Vue Js, REACT Js, Node Js, C,
+                        Python and Django which sets them apart in their field.
+                        With dynamic assessment and problem solving skills,
+                        I bring a unique perspective to solving problems, consistently delivering
+                        high-quality outcomes.
+                    </p>
+                    <div class="btn-box">
+                        <a href="#">Hire me</a>
+                        <a href="#">Let's talk</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                </div>
+
+                <span class="img-hover"></span>
+            </section>
         </div>
-
-        <div class="socials">
-            <a href="#">
-                <i class='bx bxl-facebook'></i>
-            </a>
-            <a href="#">
-                <i class='bx bxl-twitter'></i>
-            </a>
-            <a href="#">
-                <i class='bx bxl-linkedin'></i>
-            </a>
-        </div>
-
-        <span class="img-hover"></span>
-    </section>
     </div>
+    <script>
+        let menu = document.querySelector('#menu');
+        let home = document.querySelector('#home');
+
+        menu.onclick = function () {
+            home.classList.toggle('activate');
+            menu.classList.toggle('activated');
+        }
+    </script>
 
 </body>
 
