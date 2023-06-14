@@ -427,3 +427,56 @@ body {
 
     /* .socials a {} */
 }
+
+@media screen and (max-width:400px) {
+    .content {
+        padding: 70px 10%;
+    }
+
+    .profile {
+        max-width: 300px;
+    }
+
+    .profile h1 {
+        position: relative;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 30px 0 0;
+    }
+
+    .profile h3 {
+        position: relative;
+        font-size: 22px;
+        font-weight: 600;
+        /* color: rgb(204, 122, 122); */
+    }
+
+    .profile p {
+        position: relative;
+        font-size: 12px;
+        margin: 20px 0 40px;
+    }
+
+    .btn-box {
+        position: relative;
+        /* background: burlywood; */
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        width: 100%;
+        bottom: 20px;
+        height: 40px;
+    }
+
+    .socials {
+        bottom: 15px;
+        /* border: 1px solid blanchedalmond; */
+        margin: 0 30% 0 0;
+        width: 70%;
+        padding-right: 30%;
+        /* display: flex; */
+        /* justify-content: space-between; */
+    }
+    
+}
